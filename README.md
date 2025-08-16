@@ -1,9 +1,7 @@
-<p align="center">
 # AWS-Forensic-Analysis-Environment-Automation
-</p>
-<p align="center">
-  <img width="512" height="512" alt="readme_cover" src="https://github.com/user-attachments/assets/8c535277-51b8-451f-8f7b-bb39e47101c2" />
-</p>
+
+  <img width="1024" height="512" alt="readme_cover" src="https://github.com/user-attachments/assets/8c535277-51b8-451f-8f7b-bb39e47101c2" />
+
 
 This repository contains tools, scripts, and infrastructure templates for automating forensic data acquisition and analysis in AWS environments.  
 It includes Lambda functions, PowerShell and Bash scripts, and Infrastructure as Code (CloudFormation and Terraform) to support forensic workflows.
