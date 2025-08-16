@@ -34,53 +34,12 @@ Clone the repository:
 git clone https://github.com/<your-org>/aws-forensic-automation.git
 cd aws-forensic-automation
 ```
-Deploy infrastructure:
-
-# Using Terraform
-cd infrastructure/terraform
-terraform init && terraform apply
-
-# Using CloudFormation
-aws cloudformation deploy \
-  --template-file infrastructure/cloudformation/main.yaml \
-  --stack-name forensic-automation
 
 
-Publish a Lambda function:
-
-cd lambdas/snapshot_collector
-zip -r function.zip .
-aws lambda update-function-code \
-  --function-name SnapshotCollector \
-  --zip-file fileb://function.zip
-
-
-Run a forensic script with SSM:
-
-aws ssm send-command \
-  --targets "Key=instanceIds,Values=<INSTANCE_ID>" \
-  --document-name "<SSM_DOCUMENT_NAME>"
-
-Example Use Cases
-
-Automating forensic snapshot collection after GuardDuty or Security Hub findings
-
-Running SSM scripts for host triage (network connections, process listings, volatile data)
-
-Building forensic baselines by scheduling repeated evidence collection
-
-Security and Chain of Custody
-
-Evidence is stored in a dedicated S3 bucket with encryption and strict access controls
-
-Snapshots and logs are tagged for correlation with incidents
-
-Metadata and hashing are captured where applicable to maintain integrity
-
-Contributing
+## Contributing
 
 Contributions are welcome. Open an issue before submitting major changes, and include documentation updates with pull requests.
 
-License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
