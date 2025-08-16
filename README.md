@@ -1,5 +1,6 @@
+<p align="center">
 # AWS-Forensic-Analysis-Environment-Automation
-
+</p>
 <p align="center">
   <img width="512" height="512" alt="readme_cover" src="https://github.com/user-attachments/assets/8c535277-51b8-451f-8f7b-bb39e47101c2" />
 </p>
